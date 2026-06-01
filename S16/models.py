@@ -9,7 +9,7 @@ class BaseModel(Model):
 class Building(BaseModel):
     name = CharField(max_length=100)
     address = CharField(max_length=255)
-    floors = IntegerField()
+    floors = IntegerField(constraints=[Check("floors > 0")])
     is_active = BooleanField(default=True)
 
     class Meta:

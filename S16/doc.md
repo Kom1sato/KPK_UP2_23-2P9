@@ -101,10 +101,10 @@
 erDiagram
 
     BUILDING {
-        INT id PK
-        STRING name
-        STRING address
-        INT floors
-        BOOLEAN is_active
+        int id PK
+        string name
+        string address
+        int floors
+        boolean is_active
     }
 ```
